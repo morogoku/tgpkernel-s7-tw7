@@ -1,15 +1,15 @@
 #!/bin/bash
 # kernel build script by Tkkg1994 v0.4 (optimized from apq8084 kernel source)
 # Modified by djb77 / XDA Developers
-# TGPKernel Script Version: v2.10
+# TGPKernel Script Version: v2.11
 
 # ---------
 # VARIABLES
 # ---------
-BUILD_SCRIPT=2.10
+BUILD_SCRIPT=2.11
 VERSION_NUMBER=$(<build/version)
 ARCH=arm64
-BUILD_CROSS_COMPILE=~/android/toolchains/aarch64-sabermod-7.0/bin/aarch64-
+BUILD_CROSS_COMPILE=~/android/toolchains/aarch64-cortex_a53-linux-gnueabi-GNU-6.3.0/bin/aarch64-cortex_a53-linux-gnueabi-
 BUILD_JOB_NUMBER=`grep processor /proc/cpuinfo|wc -l`
 RDIR=$(pwd)
 OUTDIR=$RDIR/arch/$ARCH/boot
