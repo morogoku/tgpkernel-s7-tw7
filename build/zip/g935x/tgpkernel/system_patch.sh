@@ -13,4 +13,6 @@ rm -f /system/vendor/lib/libsecure_storage_jni.so
 rm -f /system/vendor/lib64/libsecure_storage.so
 rm -f /system/vendor/lib64/libsecure_storage_jni.so
 
+# Remvoe old PersonalPageService APK
+rm -rf /system/priv-app/PersonalPageService
 
